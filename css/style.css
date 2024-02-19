@@ -3,3 +3,8 @@
 .font-railway{
     font-family: 'Raleway', sans-serif;
 }
+
+.btn.btn-outline.selected {
+    background-color: green;
+    color: white;
+}
