@@ -4,7 +4,25 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.btn.btn-outline.selected {
+.btn.selected {
     background-color: green;
     color: white;
 }
+
+#my_modal_6:disabled {
+    background-color: #B3B3B3;
+    cursor: not-allowed;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
