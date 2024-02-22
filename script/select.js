@@ -43,16 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         applyCoupon();
     });
-
-    nextBtn.addEventListener('click', function () {
-        if (!nextBtn.disabled) {
-            showModal();
-        }
-    });
-
     function checkFormCompletion() {
         const passengerName = document.getElementById('passengerName').value;
         const phoneNumber = document.getElementById('floating_phone').value;
+        console.log(phoneNumber, passengerName);
 
         if (passengerName && phoneNumber) {
             nextBtn.disabled = false;
@@ -65,19 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('passengerName').addEventListener('input', checkFormCompletion);
     document.getElementById('floating_phone').addEventListener('input', checkFormCompletion);
-
-    function showModal() {
-        const passengerName = document.getElementById('passengerName').value;
-        const phoneNumber = document.getElementById('floating_phone').value;
-
-        if (passengerName && phoneNumber) {
-            // Display the modal
-            const modal = document.getElementById('modalDiv');
-            
-        } else {
-            console.log('Please fill in the passenger name and phone number.');
-        }
-    }
+    
 
     function applyCoupon() {
         const couponCode = couponCodeInput.value.toUpperCase();
